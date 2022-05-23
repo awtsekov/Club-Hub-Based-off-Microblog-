@@ -1,0 +1,36 @@
+2022-05-16 13:28:32,372 ERROR: Exception on /user/Tsekov [GET] [in /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_login/utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/alexandertsekov/Desktop/microblog_copy/app/routes.py", line 139, in user
+    next_url=next_url, prev_url=prev_url, form=form, clubs=clubs.items)
+NameError: name 'clubs' is not defined
+2022-05-16 13:28:33,203 ERROR: Exception on /user/Tsekov [GET] [in /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py:1457]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/flask_login/utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "/Users/alexandertsekov/Desktop/microblog_copy/app/routes.py", line 139, in user
+    next_url=next_url, prev_url=prev_url, form=form, clubs=clubs.items)
+NameError: name 'clubs' is not defined
+2022-05-16 13:29:30,151 INFO: Microblog startup [in /Users/alexandertsekov/Desktop/microblog_copy/app/__init__.py:49]
+2022-05-22 13:46:28,142 INFO: Microblog startup [in /Users/alexandertsekov/Desktop/microblog_copy/app/__init__.py:49]
+2022-05-22 13:47:27,274 INFO: Microblog startup [in /Users/alexandertsekov/Desktop/microblog_copy/app/__init__.py:49]
+2022-05-22 13:52:51,774 INFO: Microblog startup [in /Users/alexandertsekov/Desktop/microblog_copy/app/__init__.py:49]
+2022-05-22 13:53:57,528 INFO: Microblog startup [in /Users/alexandertsekov/Desktop/microblog_copy/app/__init__.py:49]
+2022-05-22 13:57:26,753 INFO: Microblog startup [in /Users/alexandertsekov/Desktop/microblog_copy/app/__init__.py:49]
